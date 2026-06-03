@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotlight Dance - 暑期精選班登記</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="formSection" class="card">
+            <h2>Quick Booking</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label>學生姓名</label>
+                    <input type="text" id="name" required placeholder="請輸入姓名">
+                </div>
+                <div class="form-group">
+                    <label>選擇優惠課程</label>
+                    <select id="package" required>
+                        <option value="暑期精選優惠 A">暑期精選優惠 A</option>
+                        <option value="暑期精選優惠 B">暑期精選優惠 B</option>
+                        <option value="暑期精選優惠 C">暑期精選優惠 C</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">提交登記資料</button>
+            </form>
+        </div>
+
+        <div id="successSection" class="card hidden">
+            <h2 style="color: #10b981;">登記只差一步完成！</h2>
+            <div class="highlight-box">
+                <p>資料已安全備份。</p>
+                <p><strong>建議您點擊下方按鈕，直接透過 WhatsApp 發送登記資料給我們，以便我們即時為您處理。</strong></p>
+            </div>
+            <button id="whatsappBtn" class="whatsapp-btn">透過 WhatsApp 傳送登記資料</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
