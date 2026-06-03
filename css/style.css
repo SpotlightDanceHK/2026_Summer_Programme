@@ -1,0 +1,69 @@
+/* ========================================================
+   SPOTLIGHT DANCE ACADEMY 暑期班 2026 - 樣式表 (style.css)
+   ======================================================== */
+
+/* 基本字體與核心排版 */
+body {
+    font-family: 'Noto Sans HK', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.serif-font {
+    font-family: 'Playfair Display', 'Noto Sans HK', serif;
+}
+
+/* 磨砂玻璃特效 */
+.glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* 霓虹與邊框微光懸停動畫 */
+.glow-hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.glow-hover:hover {
+    box-shadow: 0 0 20px rgba(244, 63, 94, 0.35);
+    transform: translateY(-2px);
+}
+
+/* 自訂精緻滾動條樣式 (適用於文案顯示庫及表格) */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* 頁面載入/切換漸入動畫 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
