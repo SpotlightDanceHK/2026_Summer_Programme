@@ -1,9 +1,0 @@
-body { font-family: sans-serif; background: #f4f4f9; display: flex; justify-content: center; padding: 20px; }
-.container { width: 100%; max-width: 400px; }
-.card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-.hidden { display: none; }
-.form-group { margin-bottom: 15px; }
-input, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 6px; }
-.submit-btn { width: 100%; padding: 12px; background: #ec4899; color: white; border: none; border-radius: 6px; cursor: pointer; }
-.highlight-box { background: #fff7ed; border-left: 5px solid #f97316; padding: 15px; margin: 20px 0; }
-.whatsapp-btn { width: 100%; padding: 15px; background: #25d366; color: white; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 16px; }
